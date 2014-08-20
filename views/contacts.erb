@@ -2,12 +2,13 @@
 
 <h2>All Contacts</h2>
 <ul>
-<% @contacts.each do |contact| %>
-  <li><%=contact.first_name%> <%=contact.last_name%> </li>
+<% @@rolodex.contacts.each do |contact| %>
+  <li><%=contact.id%>
+  <%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> <%=contact.note%></li>
 <% end %>
 </ul>
 
-<a href='/contacts_new'>create new contact</a>
+<a href='/contacts'>create new contact</a>
 
 <div> </div>
 <a href='/'>Main menu</a>
