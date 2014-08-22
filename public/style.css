@@ -45,11 +45,12 @@ div.contacts ul li{
 }
 
 div.box{
-	margin: 100px auto;
+	float:left;
+	margin: 80px 20px 80px 80px;
 	padding: 20px 80px 50px;
 	text-align: center;
-	width: 1000px;
-	border-radius: 25px;
+	width: 800px;
+	border-radius: 15px;
 	border: 3px solid rgba(59,39,46);
 	background-color: rgba(0,0,0,0.7);
 }
@@ -120,7 +121,7 @@ img{
 	margin:2px;
 	text-align: center;
 	border: 1.5px solid black;
-	width:300px;
+	width:270px;
 	height: auto;
 }
 
@@ -147,7 +148,7 @@ footer{
 form{
 	color:white;
 	text-align: left;
-	margin: 0px	350px;
+	margin: 0px	250px;
 }
 input.text{
 	margin: 10px 0px;
@@ -164,4 +165,28 @@ input.text{
 	margin-left: 20px;
 	color: white;
 	text-decoration: none;
+}
+div.side_box{
+	border: 1px solid rgb(59,39,46);
+	border-radius: 15px;
+	background-color: rgba(255,255,255,0.7);
+	float:right;
+	width: 250px;
+	margin: 80px 80px 80px 10px;
+	padding: 15px;
+}
+div.side_box h4{
+	margin-bottom: 5px;
+	margin-top: 10px;
+	text-decoration: underline;
+}
+div.side_box h6{
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-style: italic;
+	color: red;
+}
+div.side_box p{
+	font-size: 12px;
+	margin-top: 0px;
 }
