@@ -1,11 +1,20 @@
-<h1>Add new contact</h1>
-<h3>Create new Contact</h3>
+<div class="box">
+	<h1><span id="symbol">&#8225</span> Add new contact</h1>
+	<h3>Create new Contact</h3>
 
-<form action="/contacts/new" method="post">
-  <input type="text" name="first_name">
-  <input type="text" name="last_name">
-  <input type="text" name="email">
-  <input type="text" name="note">
-  <input type="submit" name="Submit">
+<form action="/contacts" method="post">
+  First name: <br/>
+  <input class="text" type="text" name="first_name" value="Fist name"><br/>
+  Last name: <br/>
+  <input class="text"type="text" name="last_name" value="Last name"><br/>
+  E-mail: <br/>
+  <input class="text"type="text" name="email" value="E-mail"><br/>
+  Notes: <br/>
+  <input class="text" type="text" name="note" value="Notes"><br/>
+  <br></br>
+  <input id="submit" type="submit" name="Submit"> 
+  <a id="back" href="/contacts"> <span id="symbol">&#187</span>cancel</a>
 </form>
-<a href='/contacts'>back</a>
+
+
+</div>

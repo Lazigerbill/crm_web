@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bill Chau Design</title>
+	<link type="text/css" rel="stylesheet" href="/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+	<nav>
+	<ul>
+		<li><a id="logo" href="/"><span id="symbol">&#8225</span> BILL CHAU DESIGN</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="/photos">Photos</a></li>
+		<li><a href="/FAQ">FAQ</a></li>
+		<li><a href="/contacts">Contacts</a></li>
+	</ul>
+	</nav>
+</header>
+
+	<%=yield%>
+
+<footer><%=Time.now.ctime%>
+</footer>
+</body>
+</html>

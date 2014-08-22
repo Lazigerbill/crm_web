@@ -1,19 +1,44 @@
 require 'sinatra'
-require_relative 'Contact.rb'
-require_relative 'Rolodex.rb'
+require 'data_mapper'
 
-@@rolodex=Rolodex.new
+DataMapper.setup(:default, "sqlite3:database.sqlite3") #this is to setup the database file .sqlite3 is the file extension
+
+class Contact	
+	include DataMapper::Resource #so we can use the command built into DataMapper
+	property :id, Serial
+	property :first_name, String
+	property :last_name, String
+	property :email, String
+	property :note, String
+	# attr_accessor(:id, :first_name, :last_name, :email, :note)
+  	# def initialize(id=nil,first_name=nil, last_name=nil, email=nil, note=nil)
+   	#  	@id = id
+   	#  	@first_name = first_name
+   	#  	@last_name = last_name
+   	#  	@email = email
+   	#  	@note = note
+end
+
+DataMapper.finalize
+DataMapper.auto_upgrade!
+
+
 
 get '/' do
-	@crm_app_name="Bill\'s CRM"
 	erb :index
 end
 
 get '/contacts' do 
-  	# @@rolodex.contacts << Contact.new("","Julie", "Hache", "julie@bitmakerlabs.com", "Instructor")
-  	# @@rolodex.contacts << Contact.new("","Will", "Richman", "will@bitmakerlabs.com", "Co-Founder")
-  	# @@rolodex.contacts << Contact.new("","Chris", "Johnston", "chris@bitmakerlabs.com", "Instructor")
+ 	@contacts = Contact.all
 	erb :contacts
+end
+
+get '/about' do 
+	erb :about
+end
+
+get '/photos' do 
+	erb :photos
 end
 
 get '/contacts/new' do 
@@ -24,8 +49,12 @@ end
 #   puts params
 
 post '/contacts' do
-new_contact = Contact.new('',params[:first_name], params[:last_name], params[:email], params[:note])
-@@rolodex.assign_id(new_contact)
+contact = Contact.create(
+	:first_name => params[:first_name],
+	:last_name => params[:last_name], 
+	:email => params[:email],
+	:note => params[:note])
+
 redirect '/contacts'
 
 end

@@ -1,14 +1,20 @@
-<h1>Contacts page</h1>
-
-<h2>All Contacts</h2>
-<ul>
-<% @@rolodex.contacts.each do |contact| %>
-  <li><%=contact.id%>
-  <%=contact.first_name%> <%=contact.last_name%> <%=contact.email%> <%=contact.note%></li>
+<div class="box">
+	<h1><span id="symbol">&#8225</span> Contacts page</h1>
+<div class="contacts">	
+<h3>All Contacts</h3>
+	<ul>
+<% @contacts.each do |contact| %>
+  <li>	<%=contact.id%> <span id="symbol">&#124</span> 
+  		<%=contact.first_name%> <span id="symbol">&#124</span> 
+  		<%=contact.last_name%> <span id="symbol">&#124</span> 
+  		<%=contact.email%> <span id="symbol">&#124</span> 
+  		<%=contact.note%></li>
 <% end %>
-</ul>
+</ul></div>
 
-<a href='/contacts'>create new contact</a>
+<div class="button">
+<a href="/contacts/new">Create new contact</a>
+</div>
 
-<div> </div>
-<a href='/'>Main menu</a>
+
+</div>

@@ -1,0 +1,167 @@
+
+header nav{
+	margin:0px 0px;
+	padding: 5px;
+	border-bottom: 1px groove rgb(171,7,0);
+	background: linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0));
+
+}
+
+header nav ul{
+	margin:0;
+	text-align: right;
+	
+}
+
+header nav ul li{
+	font-size: 15px;
+	font-family: "Arial";
+	color: rgb(171,7,0);
+	list-style-type: none;
+	display: inline-block;
+	border-left: 1px groove rgb(171,7,0);
+	padding: 1px 20px;
+	font-variant: normal;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color: rgb(171,7,0);
+}
+
+div.contacts ul li{
+	list-style: none;
+}
+
+
+#logo{
+	text-align: left;
+	font-family: "Gloria Hallelujah", cursive;
+	color: white;
+}
+#symbol{
+	color:red;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+div.box{
+	margin: 100px auto;
+	padding: 20px 80px 50px;
+	text-align: center;
+	width: 1000px;
+	border-radius: 25px;
+	border: 3px solid rgba(59,39,46);
+	background-color: rgba(0,0,0,0.7);
+}
+
+div.box h1{
+	font-size: 30px;
+	color: white;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+div.box h3{
+	text-decoration: underline;
+	color: white;
+}
+
+.box p{
+	text-align: left;	
+	color: white; 
+	font-size: 40px;
+	font-family: "Georgia";
+	font-style: italic;	
+}
+
+.highlight{
+	color:red;
+}
+
+#author{
+	margin: 10px 45px;
+	color: white;
+	font-size: 25px;
+	text-align: right;	
+}
+	
+.button {
+    height:auto;
+    width:120px;
+    padding: 10px;
+    background-color: rgba(127,127,127,0);
+    border-style:solid;
+    border-color: rgb(255,255,255);
+    border-width:2px;
+    border-radius:5px;
+    margin:auto;
+    text-align: center;
+	font-size: auto;
+	font-family: "Arial";
+	font-weight: bold;
+	color: white;
+}
+
+.button a{
+	color:white;
+	text-decoration: none;
+}
+
+.button:hover{
+	background-color: rgb(175,175,175);
+}
+
+body{
+	background-image: url(IMG_2096.JPG);
+}
+
+table{
+	text-align: center;
+}
+img{
+	margin:2px;
+	text-align: center;
+	border: 1.5px solid black;
+	width:300px;
+	height: auto;
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	padding:20px 10px 20px;
+	background: rgba(0,0,0,0.7);
+	text-align: right;
+	color: white;
+	font-family: "Arial";
+}
+
+.contacts{
+	margin: 50px 45px 20px;
+	text-align: left;	
+	color: white; 
+	font-size: 18px;
+	font-family: "Times Roman";
+}
+
+form{
+	color:white;
+	text-align: left;
+	margin: 0px	350px;
+}
+input.text{
+	margin: 10px 0px;
+	color:grey;
+	width: 300px;
+}
+
+
+#submit{
+	color:black;
+}
+
+#back{
+	margin-left: 20px;
+	color: white;
+	text-decoration: none;
+}
