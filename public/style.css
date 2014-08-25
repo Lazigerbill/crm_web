@@ -31,6 +31,7 @@ header nav ul li a{
 
 div.contacts ul li{
 	list-style: none;
+	color:white;
 }
 
 
@@ -104,6 +105,7 @@ div.box h3{
 .button a{
 	color:white;
 	text-decoration: none;
+	font-style: italic;
 }
 
 .button:hover{
@@ -154,6 +156,7 @@ input.text{
 	margin: 10px 0px;
 	color:grey;
 	width: 300px;
+	font-style: italic;
 }
 
 
@@ -190,3 +193,31 @@ div.side_box p{
 	font-size: 12px;
 	margin-top: 0px;
 }
+
+
+.edit{
+	width: 60px;
+    padding: 0px 5px;
+    border-style:solid;
+    border-color: rgb(171,7,0);
+    border-width:1px;
+    border-radius:2px;
+    text-align: center;
+	color: rgb(171,7,0);
+	text-decoration: none;
+}
+
+.edit:hover{
+    background-color: white;
+/*    padding: 0px 5px;
+    border-style:solid;
+    border-color: rgb(171,7,0);
+    border-width:1px;
+    border-radius:2px;
+    text-align: center;
+	font-size: auto;
+	color: black;
+	text-decoration: none;*/
+}
+
+

@@ -1,20 +1,38 @@
 <div class="box">
 	<h1><span id="symbol">&#8225</span> Contacts page</h1>
+
+ <h1><span id="symbol">&#8225</span> Search</h1>
+  <form action="/search_results" method="post">
+    <label for ="first_name">First Name :</label>
+      <input class="text" id="first_name" type="text" name="first_name" placeholder="First name">
+    <label for ="last_name">Last Name :</label>
+      <input class="text" id="last_name" type="text" name="last_name" placeholder="Last name"><br/>
+    <input id="submit" type="submit" name="Submit"> 
+  </form>
+<br></br>
+<div class="button">
+  <a href="/contacts_new">Create new contact</a>
+</div>
+
 <div class="contacts">	
 <h3>All Contacts</h3>
-	<ul>
+  <ul>
 <% @contacts.each do |contact| %>
-  <li>	<%=contact.id%> <span id="symbol">&#124</span> 
-  		<%=contact.first_name%> <span id="symbol">&#124</span> 
-  		<%=contact.last_name%> <span id="symbol">&#124</span> 
-  		<%=contact.email%> <span id="symbol">&#124</span> 
-  		<%=contact.note%></li>
+  <li>  <%=contact.id%> <span id="symbol">&#124</span> 
+      <%=contact.first_name%> <span id="symbol">&#124</span> 
+      <%=contact.last_name%> <span id="symbol">&#124</span> 
+      <%=contact.email%> <span id="symbol">&#124</span> 
+      <%=contact.note%></li>
 <% end %>
-</ul></div>
+</ul>
+</div>
+<br></br>
 
+
+
+<br></br>
 <div class="button">
 <a href="/contacts/new">Create new contact</a>
 </div>
-
 
 </div>

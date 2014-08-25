@@ -1,0 +1,21 @@
+<div class="box">
+  <h1><span id="symbol">&#8225</span> Search results</h1>
+
+<div class="contacts">  
+  <ul>
+<% @search_results.each do |contact| %>
+    <li> 
+      
+      <a class="edit" href="/delete/<%=contact.id%>">delete</a>
+      <a class="edit" href="/contacts/<%=contact.id%>">edit</a>
+      id:<%=contact.id%> <span id="symbol">&#124</span> 
+      <%=contact.first_name%> <span id="symbol">&#124</span> 
+      <%=contact.last_name%> <span id="symbol">&#124</span> 
+      <%=contact.email%> <span id="symbol">&#124</span> 
+      <%=contact.note%>
+    </li>
+
+<% end %>
+</ul>
+</div>
+</div>

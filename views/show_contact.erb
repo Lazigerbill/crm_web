@@ -1,0 +1,33 @@
+<div class="box">
+	<h1><span id="symbol">&#8225</span> Contact</h1>
+
+<div class="contacts">
+
+	<form action="/edit/<%= @contact.id %>" method="post">
+		<input type="hidden" name="_method" value="put">
+
+<!-- 		<input type="hidden" name="id" value="<%= @contact.id %>">
+ -->		
+		<label for="first_name">First Name:</br>
+			<input class="text" id="first_name" type="text" name="first_name" value="<%=@contact.first_name%>">
+		</label></br>
+		
+		<label for="last_name">Last name:</br>
+			<input class="text" id="last_name" type="text" name="last_name" value="<%=@contact.last_name%>">
+		</label></br>
+		
+		<label for="email">E-mail:</br>
+			<input class="text" id="email" type="text" name="email" value="<%=@contact.email%>">
+		</label></br>
+
+		<label for="note">Notes:</br>
+			<input class="text" id="note" type="text" name="note" value="<%=@contact.note%>">
+		</label></br>
+
+		<br></br>
+		<input id="submit" type="submit" name="Submit"> 
+		<a id="back" href="/contacts"> <span id="symbol">&#187</span>cancel</a>
+	</form>  
+</div>
+
+</div>
