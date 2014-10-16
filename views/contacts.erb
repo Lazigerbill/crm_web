@@ -15,10 +15,12 @@
 </div>
 
 <div class="contacts">	
-<h3>All Contacts</h3>
+ <h1><span id="symbol">&#8225</span> All contacts</h1>
   <ul>
 <% @contacts.each do |contact| %>
-  <li>  <%=contact.id%> <span id="symbol">&#124</span> 
+  <li>
+      <a class="edit" href="/contacts/<%=contact.id%>">View</a>  
+      id: <%=contact.id%> <span id="symbol">&#124</span> 
       <%=contact.first_name%> <span id="symbol">&#124</span> 
       <%=contact.last_name%> <span id="symbol">&#124</span> 
       <%=contact.email%> <span id="symbol">&#124</span> 
